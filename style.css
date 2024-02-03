@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    background-color: rgb(39,160,160);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    background-color: white;
+    width: 150px;
+    height: 150px;
+    border: 10px solid rgb(59, 232, 232);
+    border-radius: 100%;
+}
+.item{
+    /* border: 1px solid blue; */
+    background-color: black;
+    margin: 3px;
+    width: 7px;
+    height: 2px;
+}
+.item1{
+    /* border: 1px solid blue; */
+    background-color: black;
+    margin: 3px;
+    width: 2px;
+    height: 7px;
+}
+.p1{
+    position: relative;
+    top: 73px;
+}
+.p2{
+    position: relative;
+    top: 68px;
+    left: 138px;
+}
+.p3{
+    position: relative;
+    bottom: 10px;
+    left: 72px;
+}
+.p4{
+    position: relative;
+    left: 72px;
+    top: 118px;
+}
+.center{
+    background-color: black;
+    width: 4px;
+    height: 4px;
+    position: relative;
+    top: 42px;
+    left: 74px;
+    z-index: 1;
+    border-radius: 100px;
+}
+.mint{
+    background-color: black;
+    position: relative;
+    /* top: 43px; */
+    bottom: 19px;
+    left: 75px;
+    width: 2px;
+    height: 60px;
+    animation: niddlemint 3600s infinite linear;
+    transform-origin: bottom;
+}
+.sec{
+    background-color: red;
+    height: 40px;
+    width: 2px;
+    position: relative;
+    left: 75px;
+    bottom: 60px;
+    animation: niddlemint 60s infinite linear;
+    transform-origin: bottom;
+}
+.hour{
+    background-color: black;
+    height: 35px;
+    width: 1px;
+    position: relative;
+    bottom: 94px;
+    left: 76px;
+    animation: niddlehour 86400s infinite linear;
+    transform-origin: bottom;
+}
+.shade{
+    width: 170px;
+    height: 150px;
+    /* background-color: black;
+    opacity: 0.09; */
+    background: linear-gradient(to bottom, rgb(179 179 179 / 48%), rgb(11 10 10 / 3%));
+    position: relative;
+    bottom: 124px;
+    left: 47px;
+    transform: rotate(-50deg);
+}
+@keyframes niddlemint {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes niddlesec {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes niddlehour {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
